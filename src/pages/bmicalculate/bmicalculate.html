@@ -1,0 +1,38 @@
+
+<ion-header>
+  <ion-navbar>
+    <ion-title>คำนวณ BMI</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+  <ion-list>
+      <ion-item>
+        <ion-label>ส่วนสูง</ion-label>
+        <ion-input
+        [(ngModel)]="Height"
+        type="tel"
+        placeholder="เซนติเมตร"></ion-input>
+      </ion-item>
+    </ion-list>
+
+    <ion-list>
+        <ion-item>
+          <ion-label>น้ำหนัก</ion-label>
+          <ion-input
+          [(ngModel)]="Weight"
+          type="tel"
+          placeholder="กิโลกรัม"></ion-input>
+        </ion-item>
+      </ion-list>
+
+    <div padding>
+      <button
+      (click)="goToResult()"
+      ion-button
+      color="danger"
+      block>คำนวณ</button>
+    </div>
+
+</ion-content>
